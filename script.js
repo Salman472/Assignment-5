@@ -20,13 +20,7 @@ for (const copy of copyBtn) {
   copy.addEventListener("click", function () {
     const copyCount = callInt("copy-count");
     const addCopy = copyCount + 1;
-
     document.getElementById("copy-count").innerText = addCopy;
-    // alert(
-    //   "নম্বর কপি হয়েছে:" +
-    //     " " +
-    //     document.getElementsByClassName("copy-number")[0].innerText
-    // );
   });
 }
 
