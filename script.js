@@ -76,7 +76,7 @@ document.getElementById("call-btn").addEventListener("click", function () {
   const historyDiv = document.getElementById("history-div");
   historyDiv.innerText = "";
 
-  history.reverse();
+  // history.reverse();
 
   for (const memory of history) {
     const div = document.createElement("div");
@@ -93,12 +93,13 @@ document.getElementById("call-btn").addEventListener("click", function () {
         `;
     historyDiv.appendChild(div);
   }
-  const coin = callInt("total-coin");
-  const callingRate = coin - 20;
-  if (callingRate < 0) {
-    history.reverse(stop);
-    return;
-  }
+  //  history.reverse();
+  // const coin = callInt("total-coin");
+  // const callingRate = coin - 20;
+  // if (callingRate < 0) {
+  //   // history.reverse(stop);
+  //   return;
+  // }
 });
 // copy National Emergency number alert
 document.getElementById("copy").addEventListener("click", function () {
@@ -142,7 +143,7 @@ document.getElementById("call-police").addEventListener("click", function () {
   const historyDiv = document.getElementById("history-div");
   historyDiv.innerText = "";
 
-  history.reverse();
+
 
   for (const memory of history) {
     const div = document.createElement("div");
@@ -158,12 +159,6 @@ document.getElementById("call-police").addEventListener("click", function () {
           </div>  
         `;
     historyDiv.appendChild(div);
-  }
-  const coin = callInt("total-coin");
-  const callingRate = coin - 20;
-  if (callingRate < 0) {
-    history.reverse(stop);
-    return;
   }
 });
 // copy police number alert
@@ -212,7 +207,7 @@ document
     const historyDiv = document.getElementById("history-div");
     historyDiv.innerText = "";
 
-    history.reverse();
+    
 
     for (const memory of history) {
       const div = document.createElement("div");
@@ -229,12 +224,7 @@ document
         `;
       historyDiv.appendChild(div);
     }
-    const coin = callInt("total-coin");
-    const callingRate = coin - 20;
-    if (callingRate < 0) {
-      history.reverse(stop);
-      return;
-    }
+    
   });
 // copy fire service number alert
 document.getElementById("fire-btn").addEventListener("click", function () {
@@ -250,7 +240,7 @@ document.getElementById("ambulance").addEventListener("click", function () {
       document.getElementById("ambulanceP-number").innerText
   );
 });
-// document.getElementById('')
+
 // call ambulance
 document
   .getElementById("call-ambulance")
@@ -288,7 +278,6 @@ document
     const historyDiv = document.getElementById("history-div");
     historyDiv.innerText = "";
 
-    history.reverse();
 
     for (const memory of history) {
       const div = document.createElement("div");
@@ -304,12 +293,6 @@ document
           </div>  
         `;
       historyDiv.appendChild(div);
-    }
-    const coin = callInt("total-coin");
-    const callingRate = coin - 20;
-    if (callingRate < 0) {
-      history.reverse(stop);
-      return;
     }
   });
 
@@ -356,7 +339,6 @@ document.getElementById("call-helpline").addEventListener("click", function () {
   const historyDiv = document.getElementById("history-div");
   historyDiv.innerText = "";
 
-  history.reverse();
 
   for (const memory of history) {
     const div = document.createElement("div");
@@ -373,12 +355,7 @@ document.getElementById("call-helpline").addEventListener("click", function () {
         `;
     historyDiv.appendChild(div);
   }
-  const coin = callInt("total-coin");
-  const callingRate = coin - 20;
-  if (callingRate < 0) {
-    history.reverse(stop);
-    return;
-  }
+  
 });
 
 // copy Anti-Corruption number alert
@@ -430,7 +407,7 @@ document
     const historyDiv = document.getElementById("history-div");
     historyDiv.innerText = "";
 
-    history.reverse();
+   
 
     for (const memory of history) {
       const div = document.createElement("div");
@@ -447,12 +424,7 @@ document
         `;
       historyDiv.appendChild(div);
     }
-    const coin = callInt("total-coin");
-    const callingRate = coin - 20;
-    if (callingRate < 0) {
-      history.reverse(stop);
-      return;
-    }
+    
   });
 
 // copy Electricity Outage number alert
@@ -504,7 +476,6 @@ document
     const historyDiv = document.getElementById("history-div");
     historyDiv.innerText = "";
 
-    history.reverse();
 
     for (const memory of history) {
       const div = document.createElement("div");
@@ -521,12 +492,7 @@ document
         `;
       historyDiv.appendChild(div);
     }
-    const coin = callInt("total-coin");
-    const callingRate = coin - 20;
-    if (callingRate < 0) {
-      history.reverse(stop);
-      return;
-    }
+
   });
 
 // copy brac number alert
@@ -570,7 +536,7 @@ document.getElementById("call-brac").addEventListener("click", function () {
   const historyDiv = document.getElementById("history-div");
   historyDiv.innerText = "";
 
-  history.reverse();
+  
 
   for (const memory of history) {
     const div = document.createElement("div");
@@ -587,12 +553,7 @@ document.getElementById("call-brac").addEventListener("click", function () {
         `;
     historyDiv.appendChild(div);
   }
-  const coin = callInt("total-coin");
-  const callingRate = coin - 20;
-  if (callingRate < 0) {
-    history.reverse(stop);
-    return;
-  }
+  
 });
 
 // copy Bangladesh Railway number alert
@@ -633,12 +594,12 @@ document.getElementById("call-railway").addEventListener("click", function () {
   history.push(data);
 });
 
-// brac call history
+// railwayc call history
 document.getElementById("call-railway").addEventListener("click", function () {
   const historyDiv = document.getElementById("history-div");
   historyDiv.innerText = "";
 
-  history.reverse();
+ 
 
   for (const memory of history) {
     const div = document.createElement("div");
@@ -655,12 +616,7 @@ document.getElementById("call-railway").addEventListener("click", function () {
         `;
     historyDiv.appendChild(div);
   }
-  const coin = callInt("total-coin");
-  const callingRate = coin - 20;
-  if (callingRate < 0) {
-    history.reverse(stop);
-    return;
-  }
+  
 });
 
 // clear function
